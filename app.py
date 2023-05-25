@@ -26,6 +26,8 @@ class DAOState:
     winning_proposal = GlobalStateValue(stack_type=TealType.bytes, default=Bytes(""))
 
     # Box Storage
+    has_voted = BoxMapping(key_type=abi.Address, value_type=abi.Bool)
+    
     proposals = BoxMapping(
         key_type=abi.Tuple2[abi.Address, abi.Uint64],
         value_type=NFTProposal,
@@ -37,8 +39,6 @@ class DAOState:
         value_type=abi.Uint64,
         prefix=Bytes("v-"),
     )
-
-    has_voted = BoxMapping(key_type=abi.Address, value_type=abi.Bool)
 
 dao = Application("DAO", state=DAOState)
 
