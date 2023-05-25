@@ -1,0 +1,81 @@
+{
+    "hints": {
+        "mint_nft((string,byte[32],string,string,address))uint64": {
+            "structs": {
+                "proposal": {
+                    "name": "NFTProposal",
+                    "elements": [
+                        [
+                            "url",
+                            "string"
+                        ],
+                        [
+                            "metadata_hash",
+                            "byte[32]"
+                        ],
+                        [
+                            "name",
+                            "string"
+                        ],
+                        [
+                            "unit_name",
+                            "string"
+                        ],
+                        [
+                            "reserve",
+                            "address"
+                        ]
+                    ]
+                }
+            },
+            "call_config": {
+                "no_op": "CALL"
+            }
+        }
+    },
+    "source": {
+        "approval": "I3ByYWdtYSB2ZXJzaW9uIDgKaW50Y2Jsb2NrIDAgMSAzNCAzNgp0eG4gTnVtQXBwQXJncwppbnRjXzAgLy8gMAo9PQpibnogbWFpbl9sNAp0eG5hIEFwcGxpY2F0aW9uQXJncyAwCnB1c2hieXRlcyAweDdjMGUzYzg5IC8vICJtaW50X25mdCgoc3RyaW5nLGJ5dGVbMzJdLHN0cmluZyxzdHJpbmcsYWRkcmVzcykpdWludDY0Igo9PQpibnogbWFpbl9sMwplcnIKbWFpbl9sMzoKdHhuIE9uQ29tcGxldGlvbgppbnRjXzAgLy8gTm9PcAo9PQp0eG4gQXBwbGljYXRpb25JRAppbnRjXzAgLy8gMAohPQomJgphc3NlcnQKdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMQpjYWxsc3ViIG1pbnRuZnRfMApzdG9yZSAwCnB1c2hieXRlcyAweDE1MWY3Yzc1IC8vIDB4MTUxZjdjNzUKbG9hZCAwCml0b2IKY29uY2F0CmxvZwppbnRjXzEgLy8gMQpyZXR1cm4KbWFpbl9sNDoKdHhuIE9uQ29tcGxldGlvbgppbnRjXzAgLy8gTm9PcAo9PQpibnogbWFpbl9sNgplcnIKbWFpbl9sNjoKdHhuIEFwcGxpY2F0aW9uSUQKaW50Y18wIC8vIDAKPT0KYXNzZXJ0CmludGNfMSAvLyAxCnJldHVybgoKLy8gbWludF9uZnQKbWludG5mdF8wOgpwcm90byAxIDEKaW50Y18wIC8vIDAKcHVzaGJ5dGVzIDB4IC8vICIiCmR1cG4gNQpmcmFtZV9kaWcgLTEKZnJhbWVfZGlnIC0xCmludGNfMiAvLyAzNApleHRyYWN0X3VpbnQxNgpmcmFtZV9kaWcgLTEKaW50Y18zIC8vIDM2CmV4dHJhY3RfdWludDE2CnN1YnN0cmluZzMKZnJhbWVfYnVyeSAxCmZyYW1lX2RpZyAtMQpmcmFtZV9kaWcgLTEKaW50Y18zIC8vIDM2CmV4dHJhY3RfdWludDE2CmRpZyAxCmxlbgpzdWJzdHJpbmczCmZyYW1lX2J1cnkgMgpmcmFtZV9kaWcgLTEKZXh0cmFjdCAzOCAzMgpmcmFtZV9idXJ5IDMKZnJhbWVfZGlnIC0xCmZyYW1lX2RpZyAtMQppbnRjXzAgLy8gMApleHRyYWN0X3VpbnQxNgpmcmFtZV9kaWcgLTEKaW50Y18yIC8vIDM0CmV4dHJhY3RfdWludDE2CnN1YnN0cmluZzMKZnJhbWVfYnVyeSA0CmZyYW1lX2RpZyAtMQpleHRyYWN0IDIgMzIKZnJhbWVfYnVyeSA1Cml0eG5fYmVnaW4KcHVzaGludCAzIC8vIGFjZmcKaXR4bl9maWVsZCBUeXBlRW51bQpmcmFtZV9kaWcgMQpleHRyYWN0IDIgMAppdHhuX2ZpZWxkIENvbmZpZ0Fzc2V0TmFtZQpmcmFtZV9kaWcgMgpleHRyYWN0IDIgMAppdHhuX2ZpZWxkIENvbmZpZ0Fzc2V0VW5pdE5hbWUKZnJhbWVfZGlnIDMKaXR4bl9maWVsZCBDb25maWdBc3NldFJlc2VydmUKZnJhbWVfZGlnIDQKZXh0cmFjdCAyIDAKaXR4bl9maWVsZCBDb25maWdBc3NldFVSTApmcmFtZV9kaWcgNQppdHhuX2ZpZWxkIENvbmZpZ0Fzc2V0TWV0YWRhdGFIYXNoCmludGNfMCAvLyAwCml0eG5fZmllbGQgRmVlCml0eG5fc3VibWl0Cml0eG4gQ3JlYXRlZEFzc2V0SUQKZnJhbWVfYnVyeSAwCnJldHN1Yg==",
+        "clear": "I3ByYWdtYSB2ZXJzaW9uIDgKcHVzaGludCAwIC8vIDAKcmV0dXJu"
+    },
+    "state": {
+        "global": {
+            "num_byte_slices": 0,
+            "num_uints": 0
+        },
+        "local": {
+            "num_byte_slices": 0,
+            "num_uints": 0
+        }
+    },
+    "schema": {
+        "global": {
+            "declared": {},
+            "reserved": {}
+        },
+        "local": {
+            "declared": {},
+            "reserved": {}
+        }
+    },
+    "contract": {
+        "name": "Minter",
+        "methods": [
+            {
+                "name": "mint_nft",
+                "args": [
+                    {
+                        "type": "(string,byte[32],string,string,address)",
+                        "name": "proposal"
+                    }
+                ],
+                "returns": {
+                    "type": "uint64"
+                }
+            }
+        ],
+        "networks": {}
+    },
+    "bare_call_config": {
+        "no_op": "CREATE"
+    }
+}

@@ -1,0 +1,138 @@
+{
+    "hints": {
+        "add_proposal((string,byte[32],string,string,address),uint64,pay)void": {
+            "structs": {
+                "proposal": {
+                    "name": "NFTProposal",
+                    "elements": [
+                        [
+                            "url",
+                            "string"
+                        ],
+                        [
+                            "metadata_hash",
+                            "byte[32]"
+                        ],
+                        [
+                            "name",
+                            "string"
+                        ],
+                        [
+                            "unit_name",
+                            "string"
+                        ],
+                        [
+                            "reserve",
+                            "address"
+                        ]
+                    ]
+                }
+            },
+            "call_config": {
+                "no_op": "CALL"
+            }
+        },
+        "vote(address,uint64)void": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        },
+        "mint(application)uint64": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        }
+    },
+    "source": {
+        "approval": "I3ByYWdtYSB2ZXJzaW9uIDgKaW50Y2Jsb2NrIDAgMQpieXRlY2Jsb2NrIDB4IDB4NzYyZCAweDcwMmQgMHg3NzY5NmU2ZTY5NmU2NzVmNzA3MjZmNzA2ZjczNjE2YyAweDc3Njk2ZTZlNjk2ZTY3NWY3MDcyNmY3MDZmNzM2MTZjNWY3NjZmNzQ2NTczCnR4biBOdW1BcHBBcmdzCmludGNfMCAvLyAwCj09CmJueiBtYWluX2w4CnR4bmEgQXBwbGljYXRpb25BcmdzIDAKcHVzaGJ5dGVzIDB4MzczYjE1NGQgLy8gImFkZF9wcm9wb3NhbCgoc3RyaW5nLGJ5dGVbMzJdLHN0cmluZyxzdHJpbmcsYWRkcmVzcyksdWludDY0LHBheSl2b2lkIgo9PQpibnogbWFpbl9sNwp0eG5hIEFwcGxpY2F0aW9uQXJncyAwCnB1c2hieXRlcyAweDg4NjZmMGI3IC8vICJ2b3RlKGFkZHJlc3MsdWludDY0KXZvaWQiCj09CmJueiBtYWluX2w2CnR4bmEgQXBwbGljYXRpb25BcmdzIDAKcHVzaGJ5dGVzIDB4OTRjNjEyODQgLy8gIm1pbnQoYXBwbGljYXRpb24pdWludDY0Igo9PQpibnogbWFpbl9sNQplcnIKbWFpbl9sNToKdHhuIE9uQ29tcGxldGlvbgppbnRjXzAgLy8gTm9PcAo9PQp0eG4gQXBwbGljYXRpb25JRAppbnRjXzAgLy8gMAohPQomJgphc3NlcnQKdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMQppbnRjXzAgLy8gMApnZXRieXRlCmNhbGxzdWIgbWludF8zCnN0b3JlIDUKcHVzaGJ5dGVzIDB4MTUxZjdjNzUgLy8gMHgxNTFmN2M3NQpsb2FkIDUKaXRvYgpjb25jYXQKbG9nCmludGNfMSAvLyAxCnJldHVybgptYWluX2w2Ogp0eG4gT25Db21wbGV0aW9uCmludGNfMCAvLyBOb09wCj09CnR4biBBcHBsaWNhdGlvbklECmludGNfMCAvLyAwCiE9CiYmCmFzc2VydAp0eG5hIEFwcGxpY2F0aW9uQXJncyAxCnN0b3JlIDMKdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMgpidG9pCnN0b3JlIDQKbG9hZCAzCmxvYWQgNApjYWxsc3ViIHZvdGVfMgppbnRjXzEgLy8gMQpyZXR1cm4KbWFpbl9sNzoKdHhuIE9uQ29tcGxldGlvbgppbnRjXzAgLy8gTm9PcAo9PQp0eG4gQXBwbGljYXRpb25JRAppbnRjXzAgLy8gMAohPQomJgphc3NlcnQKdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMQpzdG9yZSAwCnR4bmEgQXBwbGljYXRpb25BcmdzIDIKYnRvaQpzdG9yZSAxCnR4biBHcm91cEluZGV4CmludGNfMSAvLyAxCi0Kc3RvcmUgMgpsb2FkIDIKZ3R4bnMgVHlwZUVudW0KaW50Y18xIC8vIHBheQo9PQphc3NlcnQKbG9hZCAwCmxvYWQgMQpsb2FkIDIKY2FsbHN1YiBhZGRwcm9wb3NhbF8xCmludGNfMSAvLyAxCnJldHVybgptYWluX2w4Ogp0eG4gT25Db21wbGV0aW9uCmludGNfMCAvLyBOb09wCj09CmJueiBtYWluX2wxMAplcnIKbWFpbl9sMTA6CnR4biBBcHBsaWNhdGlvbklECmludGNfMCAvLyAwCj09CmFzc2VydApjYWxsc3ViIGNyZWF0ZV8wCmludGNfMSAvLyAxCnJldHVybgoKLy8gY3JlYXRlCmNyZWF0ZV8wOgpwcm90byAwIDAKYnl0ZWNfMyAvLyAid2lubmluZ19wcm9wb3NhbCIKYnl0ZWNfMCAvLyAiIgphcHBfZ2xvYmFsX3B1dApieXRlYyA0IC8vICJ3aW5uaW5nX3Byb3Bvc2FsX3ZvdGVzIgppbnRjXzAgLy8gMAphcHBfZ2xvYmFsX3B1dApyZXRzdWIKCi8vIGFkZF9wcm9wb3NhbAphZGRwcm9wb3NhbF8xOgpwcm90byAzIDAKYnl0ZWNfMCAvLyAiIgpkdXAKaW50Y18wIC8vIDAKZHVwCmJ5dGVjXzAgLy8gIiIKZHVwCmZyYW1lX2RpZyAtMQpndHhucyBSZWNlaXZlcgpnbG9iYWwgQ3VycmVudEFwcGxpY2F0aW9uQWRkcmVzcwo9PQphc3NlcnQKZ2xvYmFsIEN1cnJlbnRBcHBsaWNhdGlvbkFkZHJlc3MKYWNjdF9wYXJhbXNfZ2V0IEFjY3RNaW5CYWxhbmNlCnN0b3JlIDcKc3RvcmUgNgp0eG4gU2VuZGVyCmZyYW1lX2J1cnkgMQpmcmFtZV9kaWcgMQpsZW4KcHVzaGludCAzMiAvLyAzMgo9PQphc3NlcnQKZnJhbWVfZGlnIDEKZnJhbWVfZGlnIC0yCml0b2IKY29uY2F0CmZyYW1lX2J1cnkgMApieXRlY18yIC8vICJwLSIKZnJhbWVfZGlnIDAKY29uY2F0CmJveF9sZW4Kc3RvcmUgOQpzdG9yZSA4CmxvYWQgOQppbnRjXzAgLy8gMAo9PQphc3NlcnQKYnl0ZWNfMiAvLyAicC0iCmZyYW1lX2RpZyAwCmNvbmNhdApib3hfZGVsCnBvcApieXRlY18yIC8vICJwLSIKZnJhbWVfZGlnIDAKY29uY2F0CmZyYW1lX2RpZyAtMwpib3hfcHV0Cmdsb2JhbCBDdXJyZW50QXBwbGljYXRpb25BZGRyZXNzCmFjY3RfcGFyYW1zX2dldCBBY2N0TWluQmFsYW5jZQpzdG9yZSAxMQpzdG9yZSAxMApmcmFtZV9kaWcgLTEKZ3R4bnMgQW1vdW50CmxvYWQgMTAKbG9hZCA2Ci0KPj0KYXNzZXJ0CnJldHN1YgoKLy8gdm90ZQp2b3RlXzI6CnByb3RvIDIgMAppbnRjXzAgLy8gMApkdXBuIDMKYnl0ZWNfMCAvLyAiIgppbnRjXzAgLy8gMApkdXAKYnl0ZWNfMCAvLyAiIgpkdXAKaW50Y18wIC8vIDAKZnJhbWVfYnVyeSAzCmZyYW1lX2RpZyAtMgpmcmFtZV9kaWcgLTEKaXRvYgpjb25jYXQKZnJhbWVfYnVyeSA0CnR4biBTZW5kZXIKYm94X2xlbgpzdG9yZSAxMwpzdG9yZSAxMgpsb2FkIDEzCmludGNfMCAvLyAwCj09CmFzc2VydApieXRlY18xIC8vICJ2LSIKZnJhbWVfZGlnIDQKY29uY2F0CmJveF9sZW4Kc3RvcmUgMTUKc3RvcmUgMTQKbG9hZCAxNQppbnRjXzAgLy8gMAo9PQpibnogdm90ZV8yX2wzCnZvdGVfMl9sMToKYnl0ZWNfMSAvLyAidi0iCmZyYW1lX2RpZyA0CmNvbmNhdApib3hfZ2V0CnN0b3JlIDE3CnN0b3JlIDE2CmxvYWQgMTcKYXNzZXJ0CmxvYWQgMTYKYnRvaQpmcmFtZV9idXJ5IDEKZnJhbWVfZGlnIDEKaW50Y18xIC8vIDEKKwpmcmFtZV9idXJ5IDAKYnl0ZWNfMSAvLyAidi0iCmZyYW1lX2RpZyA0CmNvbmNhdApib3hfZGVsCnBvcApieXRlY18xIC8vICJ2LSIKZnJhbWVfZGlnIDQKY29uY2F0CmZyYW1lX2RpZyAwCml0b2IKYm94X3B1dApmcmFtZV9kaWcgMApieXRlYyA0IC8vICJ3aW5uaW5nX3Byb3Bvc2FsX3ZvdGVzIgphcHBfZ2xvYmFsX2dldAo+CmJ6IHZvdGVfMl9sNApieXRlYyA0IC8vICJ3aW5uaW5nX3Byb3Bvc2FsX3ZvdGVzIgpmcmFtZV9kaWcgMAphcHBfZ2xvYmFsX3B1dApieXRlY18zIC8vICJ3aW5uaW5nX3Byb3Bvc2FsIgpmcmFtZV9kaWcgNAphcHBfZ2xvYmFsX3B1dApiIHZvdGVfMl9sNAp2b3RlXzJfbDM6CmJ5dGVjXzEgLy8gInYtIgpmcmFtZV9kaWcgNApjb25jYXQKYm94X2RlbApwb3AKYnl0ZWNfMSAvLyAidi0iCmZyYW1lX2RpZyA0CmNvbmNhdApmcmFtZV9kaWcgMwppdG9iCmJveF9wdXQKYiB2b3RlXzJfbDEKdm90ZV8yX2w0OgppbnRjXzEgLy8gMQpmcmFtZV9idXJ5IDIKdHhuIFNlbmRlcgpib3hfZGVsCnBvcAp0eG4gU2VuZGVyCnB1c2hieXRlcyAweDAwIC8vIDB4MDAKaW50Y18wIC8vIDAKZnJhbWVfZGlnIDIKc2V0Yml0CmJveF9wdXQKcmV0c3ViCgovLyBtaW50Cm1pbnRfMzoKcHJvdG8gMSAxCmludGNfMCAvLyAwCmJ5dGVjXzAgLy8gIiIKZHVwbiAyCmJ5dGVjXzMgLy8gIndpbm5pbmdfcHJvcG9zYWwiCmFwcF9nbG9iYWxfZ2V0CmZyYW1lX2J1cnkgMQpieXRlY18yIC8vICJwLSIKZnJhbWVfZGlnIDEKY29uY2F0CmJveF9nZXQKc3RvcmUgMTkKc3RvcmUgMTgKbG9hZCAxOQphc3NlcnQKbG9hZCAxOApmcmFtZV9idXJ5IDIKaXR4bl9iZWdpbgpwdXNoaW50IDYgLy8gYXBwbAppdHhuX2ZpZWxkIFR5cGVFbnVtCnB1c2hpbnQgVE1QTF9NSU5URVJfQVBQIC8vIFRNUExfTUlOVEVSX0FQUAppdHhuX2ZpZWxkIEFwcGxpY2F0aW9uSUQKcHVzaGJ5dGVzIDB4N2MwZTNjODkgLy8gIm1pbnRfbmZ0KChzdHJpbmcsYnl0ZVszMl0sc3RyaW5nLHN0cmluZyxhZGRyZXNzKSl1aW50NjQiCml0eG5fZmllbGQgQXBwbGljYXRpb25BcmdzCmZyYW1lX2RpZyAyCml0eG5fZmllbGQgQXBwbGljYXRpb25BcmdzCml0eG5fc3VibWl0Cml0eG4gTGFzdExvZwpleHRyYWN0IDQgMApidG9pCmZyYW1lX2J1cnkgMApyZXRzdWI=",
+        "clear": "I3ByYWdtYSB2ZXJzaW9uIDgKcHVzaGludCAwIC8vIDAKcmV0dXJu"
+    },
+    "state": {
+        "global": {
+            "num_byte_slices": 1,
+            "num_uints": 1
+        },
+        "local": {
+            "num_byte_slices": 0,
+            "num_uints": 0
+        }
+    },
+    "schema": {
+        "global": {
+            "declared": {
+                "winning_proposal": {
+                    "type": "bytes",
+                    "key": "winning_proposal",
+                    "descr": ""
+                },
+                "winning_proposal_votes": {
+                    "type": "uint64",
+                    "key": "winning_proposal_votes",
+                    "descr": ""
+                }
+            },
+            "reserved": {}
+        },
+        "local": {
+            "declared": {},
+            "reserved": {}
+        }
+    },
+    "contract": {
+        "name": "DAO",
+        "methods": [
+            {
+                "name": "add_proposal",
+                "args": [
+                    {
+                        "type": "(string,byte[32],string,string,address)",
+                        "name": "proposal"
+                    },
+                    {
+                        "type": "uint64",
+                        "name": "proposal_id"
+                    },
+                    {
+                        "type": "pay",
+                        "name": "mbr_payment"
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                }
+            },
+            {
+                "name": "vote",
+                "args": [
+                    {
+                        "type": "address",
+                        "name": "proposer"
+                    },
+                    {
+                        "type": "uint64",
+                        "name": "proposal_id"
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                }
+            },
+            {
+                "name": "mint",
+                "args": [
+                    {
+                        "type": "application",
+                        "name": "minter_app"
+                    }
+                ],
+                "returns": {
+                    "type": "uint64"
+                }
+            }
+        ],
+        "networks": {}
+    },
+    "bare_call_config": {
+        "no_op": "CREATE"
+    }
+}
