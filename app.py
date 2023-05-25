@@ -157,6 +157,7 @@ def mint_nft(proposal: NFTProposal, *, output: abi.Uint64) -> Expr:
                 TxnField.config_asset_reserve: reserve.get(),
                 TxnField.config_asset_url: url.get(),
                 TxnField.config_asset_metadata_hash: metadata_hash.encode(),
+                TxnField.config_asset_total: Int(1),
                 TxnField.fee: Int(0),
             }
         ),

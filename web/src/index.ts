@@ -225,6 +225,24 @@ buttons.mint.onclick = async () => {
     signer,
   };
 
+  const sdkMint = algosdk.makeAssetCreateTxnWithSuggestedParamsFromObject({
+    from: sender.addr,
+    suggestedParams: await algodClient.getTransactionParams().do(),
+    total: 0,
+    decimals: 0,
+    defaultFrozen: false,
+    unitName: unitNameInput.value,
+    assetName: nameInput.value,
+  });
+
+  const sdkAtc = new algosdk.AtomicTransactionComposer();
+
+  sdkAtc.addTransaction({txn: sdkMint, signer })
+
+  const res = await sdkAtc.execute(algodClient, 3)
+
+  console.log(res.txIDs)
+
   const winningProposalKey = (await daoApp.getGlobalState())
     .winning_proposal
     // @ts-ignore
